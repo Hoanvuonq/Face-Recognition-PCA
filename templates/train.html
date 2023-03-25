@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "head.html" %}
+</head>
+<body>
+
+{% include "navbar.html" %}
+
+<section class="py-1">
+    <div class="row mt-5">
+        <div class="col-md-3 offset-lg-2">
+            <h3>Generate Dataset {{ nbr }}</h3>
+            <hr>
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-md-3 offset-lg-2">
+            <a class="btn btn-warning btn-lg" href="{{ url_for('train_test_01', prs=prs) }}"> Training </a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
