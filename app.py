@@ -203,7 +203,7 @@ def home():
     data = mycursor.fetchall()
 
     return render_template('index.html', data=data)
-
+# oke
 @app.route('/addprsn')
 def addprsn():
     mycursor.execute("select ifnull(max(prs_nbr) + 1, 101) from prs_mstr")
